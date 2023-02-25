@@ -1,0 +1,56 @@
+/*-- MOVIE */
+
+.movie {
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+}
+
+.movie img {
+  height: 355px;
+  max-width: 100%;
+}
+
+.movie-infos {
+  padding: 15px 0;
+}
+
+.movie-title {
+  margin: 0;
+}
+
+.movie-voting {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #0f1014;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 25px;
+}
+
+/** SEARCH **/
+.form {
+  position: relative;
+}
+
+.search {
+  border: 1px solid darkslategray;
+  outline: transparent;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: white;
+}
+
+.submit-search {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
