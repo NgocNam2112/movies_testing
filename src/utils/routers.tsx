@@ -17,6 +17,11 @@ const routers = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
+        path: "?page=:pageId",
+        element: <Home />,
+        errorElement: <ErrorPage />,
+      },
+      {
         path: "details/:movieId",
         element: <Detail />,
         errorElement: <ErrorPage />,

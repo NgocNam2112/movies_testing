@@ -6,10 +6,12 @@ import { convertApiErrorParams } from "../convertApiErrorParams";
 
 const BASE_URL = process.env.REACT_APP_MOVIE_API;
 
-export const fetchListMovie: () => Promise<Movies> = async () => {
+export const fetchListMovie: (currentPage: number) => Promise<Movies> = async (
+  currentPage
+) => {
   try {
     const { data } = await axios.get(
-      `${BASE_URL}/now_playing?api_key=${process.env.REACT_APP_API_KEY}&language="en"&page=1`
+      `${BASE_URL}/now_playing?api_key=${process.env.REACT_APP_API_KEY}&language="en"&page=${currentPage}`
     );
     return data;
   } catch (error) {
